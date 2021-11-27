@@ -329,7 +329,7 @@ Default Gateway : 192.196.0.1
     ```
 ### Testing
     
-    ![image](https://user-images.githubusercontent.com/65032157/143684719-7bcb69e6-996e-4783-8b35-f36fb010e998.png)
+ ![image](https://user-images.githubusercontent.com/65032157/143684741-c9d0445d-23b2-4ded-8923-c1342d7b692b.png)
 
     
 ## Penggunaan VLSM pada GNS3
