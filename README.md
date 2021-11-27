@@ -284,7 +284,282 @@ Default Gateway : 192.196.0.1
 ### Routing
     
 ## Penggunaan VLSM pada GNS3
+Pada GNS3, hasil perhitungan IP menggunakan metode VSLM dimasukkan ke dalam setting konfigurasi interface di setiap nodenya. Berikut merupakan konfigurasi yang dimasukkan.  
+####  
+Foosha   
+```
+auto eth0
+iface eth0 inet dhcp
 
-### 
+auto eth1 #A1
+iface eth1 inet static
+address 192.196.8.1
+netmask 255.255.252.0
+
+auto eth2 #A3
+iface eth2 inet static
+address 192.196.27.145
+netmask 255.255.255.252
+
+auto eth3 #A10
+iface eth3 inet static
+address 192.196.27.153
+netmask 255.255.255.252
+
+auto eth4 #A14
+iface eth4 inet static
+address 192.196.27.161
+netmask 255.255.255.252
+```
+#### Water7   
+```
+auto eth0 #A3
+iface eth0 inet static
+address 192.196.27.146
+netmask 255.255.255.252
+gateway 192.196.27.145
+
+auto eth1 #A2
+iface eth1 inet static
+address 192.196.12.1
+netmask 255.255.252.0
+
+auto eth2 #A4
+iface eth2 inet static
+address 192.196.27.149
+netmask 255.255.255.252
+```
+#### Pucci  
+```
+auto eth0 #A4
+iface eth0 inet static
+address 192.196.27.150
+netmask 255.255.255.252
+gateway 192.196.27.149
+
+auto eth1 #A5
+iface eth1 inet static
+address 192.196.27.1
+netmask 255.255.255.128
+
+auto eth2 #A6
+iface eth2 inet static
+address 192.196.0.1
+netmask 255.255.248.0 
+```
+#### Guanhao
+```
+auto eth0 #A10
+iface eth0 inet static
+address 192.196.27.154
+netmask 255.255.255.252
+gateway 192.196.27.153
+
+auto eth1 #A7
+iface eth1 inet static
+address 192.196.16.1
+netmask 255.255.252.0
+
+auto eth2 #A11
+iface eth2 inet static
+address 192.196.27.157
+netmask 255.255.255.252
+
+auto eth3 #A8
+iface eth3 inet static
+address 192.196.24.1
+netmask 255.255.254.0  
+```
+#### ALABASTA
+``` 
+auto eth0 #A8
+iface eth0 inet static
+address 192.196.24.2
+netmask 255.255.254.0
+gateway 192.196.24.1
+
+auto eth1 #A9
+iface eth1 inet static
+address 192.196.27.129
+netmask 255.255.255.240
+```
+#### Oimo  
+``` 
+auto eth0 #A11
+iface eth0 inet static
+address 192.196.27.158
+netmask 255.255.255.252
+gateway 192.196.27.157
+
+auto eth1 #A12
+iface eth1 inet static
+address 192.196.26.1
+netmask 255.255.255.0
+
+auto eth2 #A15
+iface eth2 inet static
+address 192.196.27.165
+netmask 255.255.255.252
+```
+#### Seastone
+```
+auto eth0 #A12
+iface eth0 inet static
+address 192.196.26.2
+netmask 255.255.255.0
+gateway 192.196.26.1
+
+auto eth1 #A13
+iface eth1 inet static
+address 192.196.20.1
+netmask 255.255.252.0
+```
+#### Jipangu  
+```
+auto eth0 #A5
+iface eth0 inet static
+address 192.196.27.2
+netmask 255.255.255.128
+gateway 192.196.27.1
+```
+#### Cipher  
+```
+auto eth0 #A2
+iface eth0 inet static
+address 192.196.12.2
+netmask 255.255.252.0
+gateway 192.196.12.1
+```
+#### Courtyard   
+```
+auto eth0 #A6
+iface eth0 inet static
+address 192.196.0.3
+netmask 255.255.248.0
+gateway 192.196.0.1
+```
+#### Calmbelt  
+``` 
+auto eth0 #A6
+iface eth0 inet static
+address 192.196.0.2
+netmask 255.255.248.0
+gateway 192.196.0.1
+```
+#### Blueno  
+```
+auto eth0 #A1
+iface eth0 inet static
+address 192.196.8.2
+netmask 255.255.252.0
+gateway 192.196.8.1
+```
+#### Jabra  
+```
+auto eth0 #A7
+iface eth0 inet static
+address 192.196.16.2
+netmask 255.255.252.0
+gateway 192.196.16.1
+```
+#### EniesLobby  
+```
+auto eth0 #A12
+iface eth0 inet static
+address 192.196.26.3
+netmask 255.255.255.0
+gateway 192.196.26.1
+```
+#### Elena
+```
+auto eth0 #A13
+iface eth0 inet static
+address 192.196.20.2
+netmask 255.255.252.0
+gateway 192.196.20.1
+```
+#### Maingate
+```
+auto eth0 #A8
+iface eth0 inet static
+address 192.196.24.3
+netmask 255.255.254.0
+gateway 192.196.24.1
+```
+#### Jorge  
+```
+auto eth0 #A9
+iface eth0 inet static
+address 192.196.27.130
+netmask 255.255.255.240
+gateway 192.196.27.129
+```
+#### Doriki
+```
+auto eth0 #A14
+iface eth0 inet static
+address 192.196.27.162
+netmask 255.255.255.252
+gateway 192.196.27.161
+```
+#### Fukurou
+```
+auto eth0 #A15
+iface eth0 inet static
+address 192.196.27.166
+netmask 255.255.255.252
+gateway 192.196.27.165
+```   
+  
+Setelah konfigurasi selesai dilakukan rerstart node dan jalankan perintah `echo "iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.196.0.0/16" >> /root/.bashrc` pada Foosha agar ia dapat terhubung dengan internet.  
+  
+Jalankan perintah `echo 'echo "nameserver 192.168.122.1" > /etc/resolv.conf' >> /root/.bashrc` pada node-node lain agar node-node tersebut dapat terhubung ke internet juga. Untuk saat ini, lakukan testing sederhana dengan perintah `ping google.com` di 4 node yang terhubung langsung dengan Foosha untuk memastikan Foosha sudah terhubung dengan internet.  
+  
+![1](https://user-images.githubusercontent.com/68385532/143685347-5920271b-00e3-4353-8a29-3b7f21538992.PNG)
+  
+Lakukan routing pada router Foosha, Water7, Guanhou, dan Oimi. Buat sebuah file bernama route.sh dengan perintah `nano route.sh` pada keempat router dan tulis script berikut di masing-masing router.  
+```
+FOOSHA
+route add -net 192.196.12.0 netmask 255.255.252.0 gw 192.196.27.146 #A2
+route add -net 192.196.27.148 netmask 255.255.255.252 gw 192.196.27.146 #A4
+route add -net 192.196.27.0 netmask 255.255.255.128 gw 192.196.27.146 #A5
+route add -net 192.196.0.0 netmask 255.255.248.0 gw 192.196.27.146 #A6
+
+route add -net 192.196.16.0 netmask 255.255.252.0 gw 192.196.27.154 #A7
+route add -net 192.196.24.0 netmask 255.255.254.0 gw 192.196.27.154 #A8
+route add -net 192.196.27.128 netmask 255.255.255.240 gw 192.196.27.154 #A9
+route add -net 192.196.27.156 netmask 255.255.255.252 gw 192.196.27.154 #A11
+route add -net 192.196.26.0 netmask 255.255.255.0 gw 192.196.27.154 #A12
+route add -net 192.196.20.0 netmask 255.255.252.0 gw 192.196.27.154 #A13
+route add -net 192.196.27.164 netmask 255.255.255.252 gw 192.196.27.154 #A15
+
+
+WATER7
+route add -net 192.196.27.0 netmask 255.255.255.128 gw 192.196.27.150 #A5
+route add -net 192.196.0.0 netmask 255.255.248.0 gw 192.196.27.150 #A6
+route add -net 192.196.27.144 netmask 255.255.255.252 gw 192.196.27.146 #A3
+
+GUANHAO
+route add -net 192.196.27.128 netmask 255.255.255.240 gw 192.196.24.2 #A9
+route add -net 192.196.27.152 netmask 255.255.255.252 gw 192.196.27.154 #A10
+route add -net 192.196.26.0 netmask 255.255.255.0 gw 192.196.27.158 #A12
+route add -net 192.196.20.0 netmask 255.255.252.0 gw 192.196.27.158 #A13
+route add -net 192.196.27.164 netmask 255.255.255.252 gw 192.196.27.158 #A15
+
+OIMO
+route add -net 192.196.27.156 netmask 255.255.255.252 gw 192.196.27.158#A11
+route add -net 192.196.20.0 netmask 255.255.252.0 gw 192.196.26.2 #A13
+```  
+Apabila proses routing selesai dilakukan, restart ulang semua node dan jalankan script yang sudah dibuat.
+### Testing  
+Melakukan testing dengan perintah `ping its.ac.id`  
+![2](https://user-images.githubusercontent.com/68385532/143685348-35b9f8c2-33ef-46ad-bbd9-1d0ef854e577.PNG) 
+   
+Melakukan testing dengan melakukan ping antarclient  
+![3](https://user-images.githubusercontent.com/68385532/143685342-bf6ab09e-e34b-4c19-8dc6-540379289f7f.PNG)
+
+Melakukan testing dengan melakuakn ping antarserver  
+![4](https://user-images.githubusercontent.com/68385532/143685346-0a6930b1-394d-4370-8b8c-b6fd88ee2b01.PNG)
     
-## Error dan Kendala
+## Error dan Kendala   
+1. Kesalahan dalam penulisan IP dan/atau atribut-atribut lain dalam konfigurasi.
