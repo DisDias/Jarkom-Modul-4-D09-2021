@@ -124,6 +124,163 @@ A13 | 192.196.0.0 | /22
  2. Pada `Client Elena` dilakukan konfigurasi :
 ![image](https://user-images.githubusercontent.com/65032157/143682751-b055c290-7a65-4a8e-9d81-2cd84d2682f0.png)
 
+Kemudian Dilakukan pembagian IP pada Subnet yang lain dihasilkan :
+```
+-----------------------------------
+Subnet A1 :
+    
+FOOSHA
+IP      : 192.196.64.1
+Netmask : 255.255.252.0
+
+BLUENO 
+IP      : 192.196.64.2
+Netmask : 255.255.252.0
+Default Gateway : 192.196.64.1
+-----------------------------------
+Subnet A2 :
+    
+WATER 7
+IP      : 192.196.160.1
+Netmask : 255.255.252.0
+
+CIPHER 
+IP      : 192.196.160.2
+Netmask : 255.255.252.0
+Default Gateway : 192.196.160.1
+-----------------------------------
+Subnet A3 :
+    
+FOOSHA
+IP      : 192.196.192.1
+Netmask : 255.255.255.252
+
+WATER 7
+IP      : 192.196.192.2
+Netmask : 255.255.255.252
+-----------------------------------
+Subnet A4 :
+    
+WATER 7
+IP      : 192.196.144.1
+Netmask : 255.255.252.0
+
+PUCCI
+IP      : 192.196.144.2
+Netmask : 255.255.252.0
+Default Gateway : 192.196.144.1
+-----------------------------------
+Subnet A5 :
+
+PUCCI
+IP      : 192.196.136.1
+Netmask : 255.255.255.252
+
+JIPANGU
+IP      : 192.196.136.2
+Netmask : 255.255.255.252
+-----------------------------------
+Subnet A6 :
+
+PUCCI
+IP      : 192.196.128.1
+Netmask : 255.255.252.0
+
+CALMBELT
+IP      : 192.196.128.2
+Netmask : 255.255.252.0
+Default Gateway : 192.196.128.1
+    
+COURTYARD
+IP      : 192.196.128.3
+Netmask : 255.255.252.0
+Default Gateway : 192.196.128.1
+-----------------------------------
+Subnet A7 :
+
+GUANHAO
+IP      : 192.196.20.1
+Netmask : 255.255.255.252
+
+JABRA
+IP      : 192.196.20.2
+Netmask : 255.255.255.252
+-----------------------------------
+Subnet A8 :
+    
+GUANHAO 
+IP      : 192.196.16.1
+Netmask : 255.255.252.0
+
+MAINGATE
+IP      : 192.196.16.2
+Netmask : 255.255.252.0
+Default Gateway : 192.196.16.1
+    
+ALABASTA
+IP      : 192.196.16.3
+Netmask : 255.255.252.0
+Default Gateway : 192.196.16.1
+-----------------------------------
+Subnet A9 :
+   
+ALABASTA
+IP      : 192.196.18.1
+Netmask : 255.255.254.0
+
+JORGE
+IP      : 192.196.18.2
+Netmask : 255.255.254.0
+Default Gateway : 192.196.18.1
+
+-----------------------------------
+Subnet A10 :
+
+FOOSHA
+IP      : 192.196.32.1
+Netmask : 255.255.255.240
+
+GUANHAO
+IP      : 192.196.32.2
+Netmask : 255.255.255.240
+Default Gateway : 192.190.0.33
+-----------------------------------
+Subnet A11 :
+
+GUANHAO
+IP      : 192.196.8.1
+Netmask : 255.255.255.252
+
+OIMO
+IP      : 192.196.8.2
+Netmask : 255.255.255.252
+-----------------------------------
+Subnet A12 :
+OIMO 
+IP      : 192.196.4.1
+Netmask : 255.255.255.0
+
+SEASTONE
+IP      : 192.196.4.2
+Netmask : 255.255.255.0
+    
+ENIESLOBBY
+IP      : 192.196.4.3
+Netmask : 255.255.255.0
+Default Gateway : 192.196.4.1
+-----------------------------------
+Subnet A13 :
+SEASTONE
+IP      : 192.196.0.1
+Netmask : 255.255.252.0
+
+ELENA
+IP      : 192.196.0.2
+Netmask : 255.255.252.0
+Default Gateway : 192.196.0.1
+-----------------------------------
+
+```
 
 ### Routing
     
