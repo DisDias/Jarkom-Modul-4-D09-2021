@@ -163,74 +163,74 @@ Subnet A4 :
     
 WATER 7
 IP      : 192.196.144.1
-Netmask : 255.255.252.0
+Netmask : 255.255.255.252
 
 PUCCI
 IP      : 192.196.144.2
-Netmask : 255.255.252.0
-Default Gateway : 192.196.144.1
+Netmask : 255.255.255.252
 -----------------------------------
 Subnet A5 :
 
 PUCCI
 IP      : 192.196.136.1
-Netmask : 255.255.255.252
+Netmask : 255.255.255.128
 
 JIPANGU
 IP      : 192.196.136.2
-Netmask : 255.255.255.252
+Netmask : 255.255.255.128
+Default Gateway :  192.196.136.1
 -----------------------------------
 Subnet A6 :
 
 PUCCI
 IP      : 192.196.128.1
-Netmask : 255.255.252.0
+Netmask : 255.255.248.0
 
 CALMBELT
 IP      : 192.196.128.2
-Netmask : 255.255.252.0
+Netmask : 255.255.248.0
 Default Gateway : 192.196.128.1
     
 COURTYARD
 IP      : 192.196.128.3
-Netmask : 255.255.252.0
+Netmask : 255.255.248.0
 Default Gateway : 192.196.128.1
 -----------------------------------
 Subnet A7 :
 
 GUANHAO
 IP      : 192.196.20.1
-Netmask : 255.255.255.252
+Netmask : 255.255.252.0
 
 JABRA
 IP      : 192.196.20.2
-Netmask : 255.255.255.252
+Netmask : 255.255.252.0
+Default Gateway : 192.196.20.1
 -----------------------------------
 Subnet A8 :
     
 GUANHAO 
 IP      : 192.196.16.1
-Netmask : 255.255.252.0
+Netmask : 255.255.254.0
 
 MAINGATE
 IP      : 192.196.16.2
-Netmask : 255.255.252.0
+Netmask : 255.255.254.0
 Default Gateway : 192.196.16.1
     
 ALABASTA
 IP      : 192.196.16.3
-Netmask : 255.255.252.0
-Default Gateway : 192.196.16.1
+Netmask : 255.255.254.0
 -----------------------------------
 Subnet A9 :
    
 ALABASTA
 IP      : 192.196.18.1
-Netmask : 255.255.254.0
+Netmask : 255.255.255.240
 
 JORGE
 IP      : 192.196.18.2
-Netmask : 255.255.254.0
+Netmask : 255.255.255.240
 Default Gateway : 192.196.18.1
 
 -----------------------------------
@@ -238,12 +238,11 @@ Subnet A10 :
 
 FOOSHA
 IP      : 192.196.32.1
-Netmask : 255.255.255.240
+Netmask : 255.255.255.252
 
 GUANHAO
 IP      : 192.196.32.2
-Netmask : 255.255.255.240
-Default Gateway : 192.190.0.33
+Netmask : 255.255.255.252
 -----------------------------------
 Subnet A11 :
 
