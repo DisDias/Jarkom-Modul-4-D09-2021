@@ -282,6 +282,55 @@ Default Gateway : 192.196.0.1
 ```
 
 ### Routing
+    Pengaturan Routing dilakukan dengan melakukan konfigurasi pada `config->routing->static` :
+* FOOSHA
+    ```
+    192.196.136.0/25 via 192.196.192.2
+    192.196.160.0/22 via 192.196.192.2
+    192.196.144.0/30 via 192.196.192.2
+    192.196.128.0/21 via 192.196.192.2
+    192.196.20.0/22 via 192.196.32.2
+    192.196.16.0/23 via 192.196.32.2
+    192.196.18.0/28 via 192.196.32.2
+    192.196.8.0/30 via 192.196.32.2
+    192.196.4.0/24 via 192.196.32.2
+    192.196.0.0/22 via 192.196.32.2
+    ```
+* WATER 7
+    ```
+    0.0.0.0/0 via 192.196.192.1
+    192.196.136.0/25 via 192.196.144.2
+    192.196.128.0/21 via 192.196.144.2
+    
+    ```
+* PUCCI
+    ```
+    0.0.0.0/0 via 192.196.144.1
+    ```
+* GUANHAO
+    ```
+    0.0.0.0/0 via 192.196.32.1
+    192.196.4.0/24 via 192.196.8.2
+    192.196.0.0/22 via 192.196.8.2
+    192.196.18.0/28 via 192.196.16.3
+    ```
+* ALABASTA
+    ```
+    0.0.0.0/0 via 192.196.16.1
+    ```
+* OIMO
+    ```
+    0.0.0.0/0 via 192.196.8.1
+    192.196.0.0/22 via 192.196.4.2
+    ```
+* SEASTONE
+    ```
+    0.0.0.0/0 via 192.196.4.1
+    ```
+### Testing
+    
+ ![image](https://user-images.githubusercontent.com/65032157/143684741-c9d0445d-23b2-4ded-8923-c1342d7b692b.png)
+
     
 ## Penggunaan VLSM pada GNS3
 Pada GNS3, hasil perhitungan IP menggunakan metode VSLM dimasukkan ke dalam setting konfigurasi interface di setiap nodenya. Berikut merupakan konfigurasi yang dimasukkan.  
