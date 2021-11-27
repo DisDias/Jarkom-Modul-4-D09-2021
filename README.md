@@ -111,5 +111,24 @@ A11 | 192.196.8.0 | /30
 A12 | 192.196.4.0 | /24
 A13 | 192.196.0.0 | /22
 
+## Penggunaan CIDR pada CPT
 
+### Subnetting dan Pembagian IP
+    
+ Contoh Pengaturan pada Subnet A13 :
+    Pada Subnet A13 Memiliki hasil subnetting `192.196.0.0/22` sehingga IP dimulai dari `192.196.0.1`, terdapat device **Router Seastone** dan **Client Elena**
+    
+ 1. Pada **Router Seastone** dilakukan konfigurasi :
+  ![image](https://user-images.githubusercontent.com/65032157/143682706-91d21dd1-8ae4-4171-82bf-b2c3e88d2301.png)
+    
+ 2. Pada **Client Elena** dilakukan konfigurasi :
+![image](https://user-images.githubusercontent.com/65032157/143682751-b055c290-7a65-4a8e-9d81-2cd84d2682f0.png)
+
+
+### Routing
+    
+## Penggunaan VLSM pada GNS3
+
+### 
+    
 ## Error dan Kendala
