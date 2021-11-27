@@ -116,7 +116,7 @@ A13 | 192.196.0.0 | /22
 ### Subnetting dan Pembagian IP
     
  Contoh Pengaturan pada Subnet A13 :
-    Pada Subnet A13 Memiliki hasil subnetting `192.196.0.0/22` sehingga IP dimulai dari `192.196.0.1`, terdapat device **Router Seastone** dan **Client Elena**
+    Pada Subnet A13 Memiliki hasil subnetting `192.196.0.0/22` sehingga IP dimulai dari `192.196.0.1`, terdapat device <b>Router Seastone</b> dan <b>Client Elena</b>
     
  1. Pada **Router Seastone** dilakukan konfigurasi :
   ![image](https://user-images.githubusercontent.com/65032157/143682706-91d21dd1-8ae4-4171-82bf-b2c3e88d2301.png)
