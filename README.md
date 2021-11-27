@@ -51,25 +51,25 @@ Dari hasil pembagiansubnet, didapatkan sejumlah <b>13 subnet<b> dan <b>2 subnet 
 
 <img src="img/M04-1.0.png">
 
-    Sehingga, pembagian IP yang memungkinkan untuk topologi yang ada adalah sebagai berikut:
+Sehingga, pembagian IP yang memungkinkan untuk topologi yang ada adalah sebagai berikut:
 
-    Subnet | NID | Netmask
-    -------| --- | -------
-    A1 | 192.196.8.0 | /22
-    A2 | 192.196.12.0 | /22
-    A3 | 192.196.27.144 | /30
-    A4 | 192.196.27.148 | /30
-    A5 | 192.196.27.0 | /25
-    A6 | 192.196.0.0 | /21
-    A7 | 192.196.16.0 | /22
-    A8 | 192.196.24.0 | /23
-    A9 | 192.196.27.128 | /28
-    A10 | 192.196.27.152 | /30
-    A11 | 192.196.27.156 | /30
-    A12 | 192.196.26.0 | /24
-    A13 | 192.196.20.0 | /22
-    A14 | 192.196.27.160 | /30
-    A15 | 192.196.27.164 | /30
+Subnet | NID | Netmask
+-------| --- | -------
+A1 | 192.196.8.0 | /22
+A2 | 192.196.12.0 | /22
+A3 | 192.196.27.144 | /30
+A4 | 192.196.27.148 | /30
+A5 | 192.196.27.0 | /25
+A6 | 192.196.0.0 | /21
+A7 | 192.196.16.0 | /22
+A8 | 192.196.24.0 | /23
+A9 | 192.196.27.128 | /28
+A10 | 192.196.27.152 | /30
+A11 | 192.196.27.156 | /30
+A12 | 192.196.26.0 | /24
+A13 | 192.196.20.0 | /22
+A14 | 192.196.27.160 | /30
+A15 | 192.196.27.164 | /30
 
 
 ## Perhitungan CIDR
@@ -93,23 +93,23 @@ Dari hasil pembagiansubnet, didapatkan sejumlah <b>13 subnet<b> dan <b>2 subnet 
 
 <img src="img/M04-2.7.png">
 
-    Sehingga, pembagian IP yang memungkinkan untuk topologi yang ada adalah sebagai berikut:
+Sehingga, pembagian IP yang memungkinkan untuk topologi yang ada adalah sebagai berikut:
 
-    Subnet | NID | Netmask
-    -------| --- | -------
-    A1 | 192.196.64.0 | /22
-    A2 | 192.196.160.0 | /22
-    A3 | 192.196.192.0 | /30
-    A4 | 192.196.144.0 | /30
-    A5 | 192.196.136.0 | /25
-    A6 | 192.196.128.0 | /21
-    A7 | 192.196.20.0 | /22
-    A8 | 192.196.16.0 | /23
-    A9 | 192.196.18.0 | /28
-    A10 | 192.196.32.0 | /30
-    A11 | 192.196.8.0 | /30
-    A12 | 192.196.4.0 | /24
-    A13 | 192.196.0.0 | /22
+Subnet | NID | Netmask
+-------| --- | -------
+A1 | 192.196.64.0 | /22
+A2 | 192.196.160.0 | /22
+A3 | 192.196.192.0 | /30
+A4 | 192.196.144.0 | /30
+A5 | 192.196.136.0 | /25
+A6 | 192.196.128.0 | /21
+A7 | 192.196.20.0 | /22
+A8 | 192.196.16.0 | /23
+A9 | 192.196.18.0 | /28
+A10 | 192.196.32.0 | /30
+A11 | 192.196.8.0 | /30
+A12 | 192.196.4.0 | /24
+A13 | 192.196.0.0 | /22
 
 
 ## Error dan Kendala
